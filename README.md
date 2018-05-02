@@ -6,8 +6,8 @@ There are two files per translation --
 
 | File | Description | Columns |
 | ---- | ----------- | ------- |
-| <firmware>\_cli\_<locale>.csv | CLI command details | Category, Command, Title, Description |
-| <firmware>\_category\_<locale>.csv | Category names | Category |
+| \<firmware>\_cli\_\<locale>.csv | CLI command details | Category, Command, Title, Description |
+| \<firmware>\_category\_\<locale>.csv | Category names | Category |
 
 # Firmware
 
@@ -27,7 +27,7 @@ Things to note:
 2. Be mindful to keep descriptions as short as possible.
 
 ### New translations
-New translations __must__ be based off the English files. Please use <firmware>_cli_en.csv and <firmware>_category_en.csv as the base file for the new translation.
+New translations __must__ be based off the English files. Please use \<firmware>_cli_en.csv and \<firmware>_category_en.csv as the base file for the new translation.
 
 # Locales
 
