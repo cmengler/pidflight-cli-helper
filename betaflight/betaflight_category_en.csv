@@ -1,11 +1,10 @@
-CATEGORY
-Configuration
-PID Tuning
-PID Tuning > Rate
-PID Tuning > Expo
-PID Tuning > Controller
-PID Tuning > Other
-PID Tuning > Filter
-Failsafe
-Blackbox
-More
+CATEGORY,TITLE
+CONFIGURATION,Configuration
+PID,PID Tuning
+PID_RATE,PID Tuning > Rate
+PID_EXPO,PID Tuning > Expo
+PID_CONTROLLER,PID Tuning > Controller
+PID_OTHER,PID Tuning > Other
+PID_FILTER,PID Tuning > Filter
+FAILSAFE,Failsafe
+BLACKBOX,Blackbox

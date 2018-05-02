@@ -4,10 +4,10 @@ The aim of this project is to help organise and maintain the CLI commands that i
 # File formats
 There are two files per translation --
 
-| File | Description | Columns |
-| ---- | ----------- | ------- |
-| \<firmware>\_cli\_\<locale>.csv | CLI command details | Category, Command, Title, Description |
-| \<firmware>\_category\_\<locale>.csv | Category names | Category |
+| File | Description | Columns | Translatable |
+| ---- | ----------- | ------- | ------------ |
+| \<firmware>\_cli\_\<locale>.csv | CLI command details | Category, Command, Title, Description | Title, Description |
+| \<firmware>\_category\_\<locale>.csv | Category names | Category, Title | Title |
 
 # Firmware
 
