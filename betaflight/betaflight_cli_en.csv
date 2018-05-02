@@ -1,0 +1,88 @@
+CATEGORY,COMMAND,TITLE,DESCRIPTION
+CONFIGURATION,gyro_sync_denom,Gyro Sync Denominator,It's highly recommended to use the Configurator to alter this setting.
+CONFIGURATION,pid_process_denom,PID Process Denominator,It's highly recommended to use the Configurator to alter this setting.
+CONFIGURATION,acc_hardware,Accelerometer,
+CONFIGURATION,baro_hardware,Barometer,Barometer (if supported)
+CONFIGURATION,mag_hardware,Magnetometer,Magnetometer (if supported)
+CONFIGURATION,motor_pwm_protocol,ESC/Motor protocol,
+CONFIGURATION,motor_pwm_rate,Motor PWM speed,Motor PWM speed Separated from PID speed
+CONFIGURATION,motor_pwm_inversion,Motor Stop,Don't spin the motors when armed
+CONFIGURATION,min_throttle,Minimum Throttle,Lowest ESC value when armed
+CONFIGURATION,max_throttle,Maximum Throttle,Highest ESC value when armed
+CONFIGURATION,min_command,Minimum Command,This is the value that is sent to the ESCs when the craft is disarmed. Set this to a value that has the motors stopped (1000 for most ESCs).
+CONFIGURATION,mid_rc,Mid RC,"This tells the FC what your Stick Center value is, typically 1500 but may be 1520 on some radio transmitters."
+CONFIGURATION,serialrx_provider,Serial Receiver Provider,
+CONFIGURATION,battery_meter,Battery voltage monitoring,
+CONFIGURATION,vbat_min_cell_voltage,Minimum Cell Voltage,
+CONFIGURATION,vbat_max_cell_voltage,Maximum Cell Voltage,
+CONFIGURATION,vbat_warning_cell_voltage,Warning Cell Voltage,
+CONFIGURATION,vbat_scale,Voltage Scale,
+CONFIGURATION,align_board_roll,Roll Degrees,
+CONFIGURATION,align_board_pitch,Pitch Degrees,
+CONFIGURATION,align_board_yaw,Yaw Degrees,
+CONFIGURATION,align_gyro,Gyro Alignment,
+CONFIGURATION,align_acc,Accelerometer Alignment,
+CONFIGURATION,align_mag,Magnetometer Alignment,
+PID,pid_controller,PID Controller,"Legacy is old Betaflight evolved rewrite, which is basic PID controller based on integer math. Betaflight PID controller uses floating point math and has many new features specifically designed for multirotor applications."
+PID,p_roll,Roll P,
+PID,i_roll,Roll I,
+PID,d_roll,Roll D,
+PID,p_pitch,Pitch P,
+PID,i_pitch,Pitch I,
+PID,d_pitch,Pitch D,
+PID,p_yaw,Yaw P,
+PID,i_yaw,Yaw I,
+PID,d_yaw,Yaw D,
+PID_RATE,rates_type,Rates,
+PID_RATE,rc_rate,RC Rate,RC Rate for Roll and Pitch.
+PID_RATE,roll_rc_rate,RC Rate Roll,RC Rate for Roll.
+PID_RATE,pitch_rc_rate,RC Rate Pitch,RC Rate for Pitch.
+PID_RATE,yaw_rc_rate,RC Rate Yaw,RC Rate for Yaw.
+PID_RATE,rc_rate_yaw,RC Rate Yaw,RC Rate for Yaw.
+PID_RATE,roll_srate,Super Rate Roll,
+PID_RATE,pitch_srate,Super Rate Pitch,
+PID_RATE,yaw_srate,Super Rate Yaw,
+PID_EXPO,rc_expo,RC Expo,RC Expo for Roll and Pitch.
+PID_EXPO,rc_expo_yaw,RC Expo Yaw,RC Expo for Yaw.
+PID_EXPO,rc_yaw_expo,RC Expo Yaw,RC Expo for Yaw.
+PID_EXPO,roll_expo,RC Expo Roll,RC Expo for Roll.
+PID_EXPO,pitch_expo,RC Expo Pitch,RC Expo for Pitch.
+PID_EXPO,yaw_expo,RC Expo Yaw,RC Expo for Yaw.
+PID_CONTROLLER,dterm_setpoint_weight,D Setpoint Weight,This parameter determines the stick accelerating effect within derivative component.
+PID_CONTROLLER,pterm_srate_ratio,D Setpoint Transition,"D Setpoint Weight can be reduced near the center of the sticks, which results in smoother end of flips and rolls."
+PID_CONTROLLER,setpoint_relax_ratio,D Setpoint Transition,"D Setpoint Weight can be reduced near the center of the sticks, which results in smoother end of flips and rolls."
+PID_CONTROLLER,vbat_pid_compensation,Vbat PID Compensation,"Increases the PID values to compensate when Vbat gets lower. This will give more constant flight characteristics throughout the flight. The amount of compensation that is applied is calculated from Maximum Cell Voltage set in Configuration page, so make sure that is set to something appropriate."
+PID_CONTROLLER,vbat_pid_gain,Vbat PID Compensation,"Increases the PID values to compensate when Vbat gets lower. This will give more constant flight characteristics throughout the flight. The amount of compensation that is applied is calculated from Maximum Cell Voltage set in Configuration page, so make sure that is set to something appropriate."
+PID_OTHER,thr_mid,Throttle Mid,
+PID_OTHER,thr_expo,Throttle Expo,
+PID_OTHER,tpa_rate,TPA,
+PID_OTHER,tpa_breakpoint,TPA Breakpoint,
+PID_FILTER,gyro_lpf,Gyro Lowpass Filter Enabled,Gyro lowpass filter enabled.
+PID_FILTER,gyro_lowpass_type,Gyro Lowpass Filter,Gyro lowpass filter type to use.
+PID_FILTER,gyro_lowpass_hz,Gyro Soft Lowpass Frequency,Gyro Soft Lowpass Frequency [Hz]
+PID_FILTER,gyro_notch1_hz,Gyro Notch Filter 1,Gyro Notch Filter 1 Frequency [Hz] (0 means disabled)
+PID_FILTER,gyro_notch1_cutoff,Gyro Notch Filter 1 Cutoff,Gyro Notch Filter Cutoff 1 Frequency [Hz] (This is where notch filter starts. For example with notch filter 160 and notch Hz of 260 it means the range is 160-360Hz with most attenuation around center)
+PID_FILTER,gyro_notch2_hz,Gyro Notch Filter 2,Gyro Notch Filter 2 Frequency [Hz] (0 means disabled)
+PID_FILTER,gyro_notch2_cutoff,Gyro Notch Filter 2 Cutoff,
+PID_FILTER,gyro_filter_q,Gyro Kalman Filter Q,
+PID_FILTER,gyro_filter_r,Gyro Kalman Filter R,
+PID_FILTER,gyro_filter_p,Gyro Kalman Filter P,
+PID_FILTER,gyro_stage2_filter_type,Gyro Stage 2 Filter,
+PID_FILTER,gyro_stage2_lowpass_hz,Gyro Stage 2 Lowpass Frequency,Gyro Stage 2 Lowpass Frequency [Hz]
+PID_FILTER,dterm_lowpass_type,D-Term Lowpass Filter,D-Term lowpass filter type to use.
+PID_FILTER,dterm_lowpass,D Term Lowpass Frequency,D Term Lowpass Frequency [Hz] (0 means disabled)
+PID_FILTER,dterm_notch_hz,D Term Notch Filter Frequency,D Term Notch Filter Frequency [Hz] (0 means disabled)
+PID_FILTER,dterm_notch_cutoff,D Term Notch Filter Cutoff,D Term Notch Filter Cutoff in Hz (This is where notch filter starts. For example with notch filter 160 and notch hz of 260 it means the range is 160-360hz with most attenuation around center)
+PID_FILTER,yaw_lowpass,Yaw Lowpass Frequency,Yaw Lowpass Frequency [Hz] (Yaw axis can sometimes be noiser than the rest. This filter only affects the P of yaw)
+FAILSAFE,failsafe_delay,Failsafe Delay,Guard time for stage 2 activation after signal lost [1 = 0.1 sec.]
+FAILSAFE,failsafe_off_delay,Failsafe Off Delay,Delay for turning off the Motors during Failsafe [1 = 0.1 sec.]
+FAILSAFE,failsafe_throttle,Failsafe Throttle,Throttle value used while landing.
+FAILSAFE,failsafe_kill_switch,Failsafe Kill Switch,Failsafe Kill Switch (setup Failsafe in Modes tab of Configurator).
+FAILSAFE,failsafe_throttle_low_delay,Failsafe Low Delay,Failsafe Throttle Low Delay [1 = 0.1 sec.]
+FAILSAFE,failsafe_procedure,Failsafe Procedure (Stage 2),
+BLACKBOX,blackbox_p_denom,Blackbox P Denominator,
+BLACKBOX,blackbox_device,Blackbox Device,
+BLACKBOX,blackbox_on_motor_test,Blackbox Motor Test,
+BLACKBOX,blackbox_record_acc,Blackbox Record Accelerometer,
+BLACKBOX,blackbox_mode,Blackbox Mode,
+BLACKBOX,blackbox_p_ratio,Blackbox P Ratio,
